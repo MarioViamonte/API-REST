@@ -5,4 +5,8 @@ const TaskController = require('../controllers/TaskController')
 
 router.post('/novaTarefa',TaskController.novaTarefa)
 
+router.get('/tarefas',TaskController.listarTarefas)
+
+router.get('/tarefa/:id',TaskController.listarUmaTarefa)
+
 module.exports = router
